@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        background-color: blueviolet;
+        display: none;
+        margin-top: 20px;
+        margin-left: 50px;
+        border: 10px outset black;
+        padding: 50px 10px 0px 60px;
+      }
+
+      .container {
+        padding: 20px 45px;
+        background-color: #ddd;
+        width: 100%;
+      }
+      .circulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: cadetblue;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+
+      .container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: blue;
+        width: 600px;
+        gap: 2px;
+        padding: 60px 20px;
+      }
+
+      .box {
+        background-color: #fff;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aula BoxModel</h1>
+
+    <div class="container">
+      <h2>Trabalhando com divs</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+        consequatur alias debitis voluptatum tenetur amet sint aliquid deleniti
+        velit, eum, consequuntur, nesciunt recusandae ullam consectetur fuga
+        dignissimos nulla atque quo!
+      </p>
+    </div>
+
+    <div class="circulo">
+      <h3>DA</h3>
+    </div>
+
+    <div class="container-flex">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </body>
+</html>
